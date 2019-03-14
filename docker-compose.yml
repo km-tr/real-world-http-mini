@@ -4,5 +4,6 @@ services:
     image: golang:alpine
     volumes:
       - ./:/go/src/app
+     working_dir: /go/src/app
     environment:
       GO111MODULE: 'on'
